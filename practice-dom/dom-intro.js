@@ -2,7 +2,10 @@ console.log('===== 要素の検索 =====');
 let p1 = document.querySelector('p#strawberry');	// p#strawberry(id=straberryのp要素)を検索
 console.log(p1);									// 検索結果のp要素のオブジェクトを表示
 console.log(p1.textContent);						// p要素の内容（テキスト）を表示
-
+let x = document.querySelector('p#strawberry');
+let y = document.createElement('strong');
+y.textContent = '大福';
+x.insertAdjacentElement('beforeend', y);
 console.log('----------------------');
 let ps2 = document.querySelectorAll('p.cands');		// p.cands(class=candsのp要素)を全て検索
 for (let p2 of ps2) {								// 検索結果のp要素それぞれに対して繰り返し..
