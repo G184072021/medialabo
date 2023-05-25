@@ -1,0 +1,20 @@
+h1{
+    text-shadow: rgb(12, 208, 218) 1px 0 10px;
+}
+p{color:rgb(3, 2, 25)}
+a:link {
+    color: rgb(11, 11, 243);
+  }
+  
+  a:visited {
+    color: rgb(233, 16, 211);
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  manythings {color:rgb(235, 225, 154);
+}
+background{color: yellow};
+
+exampleone { background-color: yellow; }
