@@ -11,7 +11,7 @@ let s= 0;
 
 // ボタンを押した後の処理をする関数 hantei() の定義
   function hantei() {
-    let b = document.querySelector('#print');
+    let b = document.querySelector('button#print');
     b.addEventListener('click', greeting);
 
 // 2. イベントハンドラの定義
