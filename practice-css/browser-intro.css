@@ -29,10 +29,13 @@ div#zentai > div {
 	padding: 5px;
 	background-color: #eddb96;
 	fout-family: cursive;
+	color: #3f3faf;
 }
 img.sign {
     float: right;   /* 画像を右に浮かせる */
-
+	width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 10px;
 }
 h1{
 	color: white;
