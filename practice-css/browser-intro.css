@@ -1,5 +1,6 @@
 p {
 	color: black;
+	background-color: #dfdfdf;
 }
 
 p.info {
@@ -27,6 +28,7 @@ div#zentai {
 div#zentai > div {
 	padding: 5px;
 	background-color: #eddb96;
+	fout-family: cursive;
 }
 img.sign {
     float: right;   /* 画像を右に浮かせる */
