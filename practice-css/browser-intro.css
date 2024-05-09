@@ -30,6 +30,7 @@ div#zentai > div {
 	background-color: #eddb96;
 	fout-family: cursive;
 	color: #3f3faf;
+	background: linear-gradient(white,#ffefaf);
 }
 img.sign {
     float: right;   /* 画像を右に浮かせる */
