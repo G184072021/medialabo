@@ -23,3 +23,6 @@ exampleone { background-color: yellow; }
 p{
 width : 700px;
 }
+h2{
+  font-style: italic;
+}
