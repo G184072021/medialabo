@@ -11,16 +11,16 @@ let s= 0;
 
 // ボタンを押した後の処理をする関数 hantei() の定義
   function hantei() {
-    let b = document.querySelector('button#print');
-    b.addEventListener('click', greeting);
+    let b = document.querySelector('#kaito');
+    b.addEventListener('click', hantei);
 
 // 2. イベントハンドラの定義
-function greeting() {
+function hantei() {
 	let i = document.querySelector('input[name="seisuu"]');
-	let seisuu = i.value;
-	let yoso = seisuu;       
+	let yoso = i.value;
+	//let yoso = seisuu;       
     kaisu++;
-    let presult = document.querySelector('p#result');
+    let span_kaisu = document.querySelector('span#kaisu');
     span = document.createElement('span');
     presult.insertAdjacentElement('beforeend',span);
 
