@@ -38,9 +38,9 @@ for (let student of students) {
  dp.insertAdjacentElement('beforeend', d);
   }
 // 練習4-4 箇条書き削除プログラム
-{let w = document.querySelector('li'); 
-for(let s of w)
-	s.remove();
+{let w = document.querySelector('li#whale'); 
+w.remove();
+
 }
 
 // 練習4-5 箇条書き追加プログラム
