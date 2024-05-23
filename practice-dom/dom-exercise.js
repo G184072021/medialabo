@@ -14,7 +14,7 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
-let p = document.createElement('p'); 
+/*let p = document.createElement('p'); 
 p.textContent = '写真表と都市の緯度経度のページです'; 
 let h2 = document.querySelector('h2#ex42');
 h2.insertAdjacentElement('afterend', p); 
@@ -43,5 +43,4 @@ for (let student of students) {
 
 
 
-// 練習4-5 箇条書き追加プログラム
-
+// 練習4-5 箇条書き追加プログラム*/
