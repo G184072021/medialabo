@@ -47,4 +47,27 @@ let data = {
   
   ////////// 課題3-2 ここからプログラムを書こう
   
-  
+let lon=document.querySelector('#lon');
+let lat=document.querySelector('#lat');
+let description=document.querySelector('#descrption');
+let temp_min=document.querySelector('#temp_min');
+let temp_max=document.querySelector('#temp_max');
+let humidity=document.querySelector('#humidity');
+let speed=document.querySelector('#speed');
+let deg=document.querySelector('#deg');
+let name=document.querySelector('#name');
+
+let button=document.querySelector('#btn');
+button.addEventListener('click',sendRequest);
+
+function sendRequest(){
+    let s=document.querySelector('select#country');
+    let idx=s.selectedIndex;
+
+let os=s.querySelectorAll('option');
+let o=os.item(idx);
+let countryid=o.getAttribute('value');
+console.log('value'+o.getAttribute('value'));
+
+let url="http://www."
+}
