@@ -4,12 +4,6 @@ console.log('答え: ' + kotae);
 
 // 入力回数（予想回数）
 let kaisuu = 0;
-//let s= 0;
-// 予想を4回実行する
-// 将来以下の hantei(); の4回の呼び出しを全て削除する
-// 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-
-// ボタンを押した後の処理をする関数 hantei() の定義
 
     let b = document.querySelector('#kaito');
     b.addEventListener('click', hantei);
