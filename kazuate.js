@@ -7,7 +7,7 @@ let kaisuu = 0;
 
     let b = document.querySelector('#kaito');
     b.addEventListener('click', hantei);
-let w=document.querySelector('p#result3');
+let w=document.querySelector('p#result');
   w.remove();
 // 2. イベントハンドラの定義
 function hantei() {
