@@ -22,7 +22,8 @@ function hantei() {
 
     let p_result=document.querySelector('p#result');
 
-  
+  let w=document.querySelector('p#result');
+  w.remove();
   
   
 //        ページに表示する方法はまだ習っていないので
