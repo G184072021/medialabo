@@ -25,6 +25,7 @@ function hantei() {
 
     let span_answer = document.querySelector('span#answer');
     span_answer.textContent=yoso;
+
     let p_result=document.querySelector('p#result');
 
   
@@ -37,24 +38,26 @@ function hantei() {
   // 課題3-1: 正解判定する
 console.log(kaisuu+1+"回の予想:"+yoso);
 
-  if(kotae == yoso){
-    li.textContent = ("正解です。おめでとう！");
-    console.log = ("正解です。おめでとう！");
+  if(kaisuu>=3){
+   p_result.textContent="答えは"+kotae+"でした。すでにゲームは終わっています。";
 }
-else if(kaisu >= 4){
-    li.textContent = ("答えは"+kotae+"でした．すでにゲームは終わっています");
+else if(yoso==kotae){
+  p_result.textContent = "正解です。おめでとう！";
     
 }
-else if(kotae > yoso){
-    li.textContent =("まちがい。答えはもっと大きいですよ");
+else if(kaisuu==2){
+  p_result.textContent ="間違い。残念でした答えは"+kotae+"でした。";
     
 }
-else if(kotae < yoso){
-    li.textContent =("まちがい。答えはもっと小さいですよ");
+else if(yoso<kotae){
+  p_result.textContent ="間違い。答えはもっと大きいです。";
     
 }
+else{
+  p_result.textContent="間違い。答えはもっと小さいです。";
 }
-  // kotae と yoso が一致するかどうか調べて結果を出力
-  // 課題3-1における出力先はコンソール
+kaisuu=kaisuu+1;
+}
+
 
   
