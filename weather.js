@@ -69,5 +69,32 @@ let o=os.item(idx);
 let countryid=o.getAttribute('value');
 console.log('value'+o.getAttribute('value'));
 
-let url="http://wwww.nishita-lab.org/web-contents"
+let url="http://wwww.nishita-lab.org/web-contents/josns/openweather/countryid.json";
+//通信開始
+axios.get(url)
+.tahn(showResult)
+.catcha(showError)
+.then(finish);
+
+}
+function showResult(resp){
+  //サーバから送られてきたデータの出力
+  let data=resp.data;
+  //dataが文字列型なら、オブジェクトに変換する。
+  if(typeof data =='string'){
+    data=JSON.parse(data);
+  }
+  //dataコンソールに出力
+  console.log(data);
+  //data.xを出力
+  console.log(data.x);
+  
+}
+//通信エラーが発生した時の処理
+function showError(err){
+  console.log(err);
+}
+//通信の最後にいつも実行する処理
+function finish(){
+  console.log('jax通信終わりました。');
 }
