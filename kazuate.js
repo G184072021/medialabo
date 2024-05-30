@@ -48,7 +48,7 @@ else if(yoso<kotae){
 else{
   p_result.textContent="間違い。答えはもっと小さいです。";
 }
-kaisu=kaisuu+1;
+kaisu=kaisu+1;
 }
 
 
