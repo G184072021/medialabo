@@ -39,7 +39,7 @@ for (let student of students) {
   }
 // 練習4-4 箇条書き削除プログラム
 
-let w=document.querySerector('li#ul>location');
+let w=document.querySelector('li#ul>location');
 w.remove();
 
 
