@@ -69,5 +69,5 @@ let o=os.item(idx);
 let countryid=o.getAttribute('value');
 console.log('value'+o.getAttribute('value'));
 
-let url="http://www."
+let url="http://wwww.nishita-lab.org/web-contents"
 }
