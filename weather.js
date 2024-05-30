@@ -69,7 +69,7 @@ let o=os.item(idx);
 let countryid=o.getAttribute('value');
 console.log('value'+o.getAttribute('value'));
 
-let url="http://wwww.nishita-lab.org/web-contents/josns/openweather/"+countryid+".json";
+let url="http://www.nishita-lab.org/web-contents/josns/openweather/"+countryid+".json";
 //通信開始
 axios.get(url)
 .tahn(showResult)//通信成功
