@@ -15,7 +15,7 @@ function hantei() {
 	let yoso = i.value;
 	//let yoso = seisuu;       
     
-    let span_kaisu = document.querySelector('span#kaisuu');
+    let span_kaisuu = document.querySelector('span#kaisuu');
     span_kaisuu.textContent=kaisuu+1;
 
     let span_answer = document.querySelector('span#answer');
