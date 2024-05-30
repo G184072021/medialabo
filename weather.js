@@ -69,32 +69,45 @@ let o=os.item(idx);
 let countryid=o.getAttribute('value');
 console.log('value'+o.getAttribute('value'));
 
-let url="http://wwww.nishita-lab.org/web-contents/josns/openweather/countryid.json";
+let url="http://wwww.nishita-lab.org/web-contents/josns/openweather/"+countryid+".json";
 //通信開始
 axios.get(url)
-.tahn(showResult)
-.catcha(showError)
-.then(finish);
+.tahn(showResult)//通信成功
+.catcha(showError)//通信失敗
+.then(finish);//通信の最後の処理
 
 }
 function showResult(resp){
-  //サーバから送られてきたデータの出力
-  let data=resp.data;
-  //dataが文字列型なら、オブジェクトに変換する。
-  if(typeof data =='string'){
-    data=JSON.parse(data);
+  //サバーから送られてきたデータを出力
+  let data =resp.data;
+
+  //dataが文字列型なら 、オブジェクトに変換する。
+  if (typeof data ==='string'){
+    data =JSON.parse(data);
   }
-  //dataコンソールに出力
+  //dataをコンソールに出力
   console.log(data);
   //data.xを出力
   console.log(data.x);
-  
+
+  lon.textContent="緯度"+data.coord.lon;
+  lat.textContent="経度"+data.coord.lat;
+  description.textContent="天気"+data.weather.description;
+  temp_max.textContent="最高気温"+data.main.temp_max;
+  temp_min.textContent="最低気温"+data.main.temp_min;
+  humidity.textContent="湿度"+data.mainhumidity;
+  speed.textContent="風速"+data.wind.speed;
+  deg.textContent="風向"+data.wind.deg;
+  name.textContent="都市名"+data.name;
+
 }
 //通信エラーが発生した時の処理
 function showError(err){
   console.log(err);
 }
+
 //通信の最後にいつも実行する処理
 function finish(){
-  console.log('jax通信終わりました。');
+  console.log('Ajax通信が終わりました。')
 }
+
