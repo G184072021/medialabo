@@ -67,13 +67,13 @@ function sendRequest(){
 let os=s.querySelectorAll('option');
 let o=os.item(idx);
 let countryid=o.getAttribute('value');
-console.log('value'+o.getAttribute('value'));
+console.log('value＝'+o.getAttribute('value'));
 
-let url="http://www.nishita-lab.org/web-contents/josns/openweather/"+countryid+".json";
+let url='https://www.nishita-lab.org/web-contents/josns/openweather/'+countryid+'.json';
 //通信開始
 axios.get(url)
-.tahn(showResult)//通信成功
-.catcha(showError)//通信失敗
+.then(showResult)//通信成功
+.catch(showError)//通信失敗
 .then(finish);//通信の最後の処理
 
 }
@@ -92,7 +92,7 @@ function showResult(resp){
 
   lon.textContent="緯度"+data.coord.lon;
   lat.textContent="経度"+data.coord.lat;
-  description.textContent="天気"+data.weather.description;
+  description.textContent="天気"+data.weather[0].description;
   temp_max.textContent="最高気温"+data.main.temp_max;
   temp_min.textContent="最低気温"+data.main.temp_min;
   humidity.textContent="湿度"+data.mainhumidity;
