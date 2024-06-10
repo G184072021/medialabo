@@ -67,7 +67,7 @@ function sendRequest(){
 let os=s.querySelectorAll('option');
 let o=os.item(idx);
 let countryid=o.getAttribute('value');
-console.log('value＝'+o.getAttribute('value'));
+console.log('value='+o.getAttribute('value'));
 
 let url='https://www.nishita-lab.org/web-contents/josns/openweather/'+countryid+'.json';
 //通信開始
