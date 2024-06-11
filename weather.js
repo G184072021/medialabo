@@ -57,7 +57,7 @@ let data = {
   let deg=document.querySelector('#deg');
   let name=document.querySelector('#name');
   
-  let button =document.querySelector('#btn');
+  let button =document.querySelector('#target');
   button.addEventListener('click', sendRequest);
   function sendRequest() {
     let s = document.querySelector('select#country');
