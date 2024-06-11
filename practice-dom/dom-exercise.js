@@ -49,5 +49,5 @@ let z=document.querySelector('ul#location');
 for(let i of data){
 	let a=document.createElement('li');
 	a.textCotent=i.name+"... 緯度:"+i.lat+"... 経度:"+i.lng;
-	x.insertAdjacentElement('beforeend',a);
+	z.insertAdjacentElement('beforeend',a);
 }
