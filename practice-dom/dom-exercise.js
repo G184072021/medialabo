@@ -39,9 +39,15 @@ for (let student of students) {
   }
 // 練習4-4 箇条書き削除プログラム
 
-let w=document.querySelector('li#ul>location');
-w.remove();
-
-
+let w=document.querySelectorAll('ul#location');
+for(let i of w){
+i.remove();	
+}
 
 // 練習4-5 箇条書き追加プログラム
+let z=document.querySelectorAll('ul#location');
+for(let i of data){
+	let x=doqument.createElement('li');
+	x.textCotent=i.name+"... 緯度:"+i.lat+"... 経度:"+i.lng;
+	z.insertAdjacentElement('beforeend',a);
+}
