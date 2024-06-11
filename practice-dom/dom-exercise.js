@@ -47,7 +47,7 @@ i.remove();
 // 練習4-5 箇条書き追加プログラム
 let z=document.querySelector('ul#location');
 for(let i of data){
-	let x=doqument.createElement('li');
+	let x=document.createElement('li');
 	x.textCotent=i.name+"... 緯度:"+i.lat+"... 経度:"+i.lng;
 	z.insertAdjacentElement('beforeend',x);
 }
