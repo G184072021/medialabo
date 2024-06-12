@@ -45,3 +45,4 @@ i.remove();
 }
 
 // 練習4-5 箇条書き追加プログラム
+let z=document.querySerecotr('#location');
