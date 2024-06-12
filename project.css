@@ -4,7 +4,7 @@ p{
     background-color: rgb(235, 235, 69);
 }
 h1{
-    font-family: Georgia, serif;;
-    border-bottom-style: groove;
+    font-family: Georgia, serif;
+    border-bottom: 1px solid #f48e08;
     color: rgb(249, 139, 5);
 }
