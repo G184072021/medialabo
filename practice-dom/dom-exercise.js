@@ -46,3 +46,8 @@ i.remove();
 
 // 練習4-5 箇条書き追加プログラム
 let z=document.querySerecotr('#location');
+for(let i of data){
+let a=document.createElement('li');	
+a.textContent=i.name+"... 経緯"+i.lat+"... 経度"+i.lng;
+z.insertAdjacentElement('beforeend',a);
+}
