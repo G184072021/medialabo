@@ -3,3 +3,8 @@ p{
 
     background-color: rgb(235, 235, 69);
 }
+h1{
+    font-style:italic;
+    border-bottom-style: groove;
+    color: rgb(249, 139, 5);
+}
