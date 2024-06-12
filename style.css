@@ -31,3 +31,7 @@ h2{
   background-color: rgb(153 102 153);
   color: rgb(255 255 204);
 }
+ul{
+  border: 4mm ridge rgba(211, 220, 50, .6);
+  background-color: #eeeeee;
+}
