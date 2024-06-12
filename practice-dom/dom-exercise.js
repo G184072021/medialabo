@@ -39,7 +39,7 @@ for (let student of students) {
   }
 // 練習4-4 箇条書き削除プログラム
 
-let w=document.querySelectorAll('ul#location>li');
+/*let w=document.querySelectorAll('ul#location>li');
 for(let i of w){
 i.remove();	
 }
@@ -50,4 +50,4 @@ for(let i of data){
 	let a=document.createElement('li');
 	a.textCotent=i.name+"... 緯度:"+i.lat+"... 経度:"+i.lng;
 	z.insertAdjacentElement('beforeend',a);
-}
+}*/
